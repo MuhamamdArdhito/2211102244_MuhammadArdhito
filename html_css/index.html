@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar HTML - Agam Yogi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .warna-merah {
+            color: crimson;
+        }
+
+        .warna-biru {
+            color: royalblue;
+        }
+
+        .warna-hijau {
+            color: seagreen;
+        }
+
+        .warna-ungu {
+            color: purple;
+        }
+
+        .warna-orange {
+            color: darkorange;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        .image-container img {
+            width: 300px;
+            border: 2px solid #ccc;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .grid-item {
+            background: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .flex-item {
+            background: lightcoral;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="warna-biru">Halo, Mbak F!</h1>
+    <p class="warna-merah">Ini adalah paragraf pertama Agam Yogi.</p>
+
+    <hr>
+
+    <h2 class="warna-hijau">1. Pengenalan HTML</h2>
+    <p>HTML adalah <span class="warna-ungu">bahasa markup</span> yang digunakan untuk menyusun konten dalam halaman web.</p>
+
+    <h2 class="warna-orange">2. Struktur Dasar HTML</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Halo, Mbak F!&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf pertama Agam Yogi.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2 class="warna-biru">3. Elemen HTML Dasar & Contoh Penggunaannya</h2>
+
+    <h3>Heading</h3>
+    <h1 class="warna-hijau">Judul Utama</h1>
+    <h2>Sub Judul</h2>
+    <h3 class="warna-orange">Ini Heading 03</h3>
+    <h4>Ini Heading 04 </h4>
+    <h5 class="warna-merah">Ini Heading 05</h5>
+    <h6>Ini Heading 06</h6>
+
+    <h3>Paragraf</h3>
+    <p class="warna-ungu">Ini Paragraf Saya</p>
+
+    <h3>Gambar</h3>
+    <p>Gambar ditampilkan menggunakan tag <code>&lt;img&gt;</code>:</p>
+
+    <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1613326739572-9cc04fcf7cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Wayne Rooney">
+        <img src="https://cdns.klimg.com/bola.net/resized/810x540/library/upload/21/2023/03/996x664/liverpool_21c39ef.jpg" alt="Liverpool">
+    </div>
+
+    <h3>Link</h3>
+    <p><a class="warna-biru" href="https://www.zawata.co.id/" target="_blank">Kunjungi Zawata</a></p>
+
+    <h3>Tabel</h3>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th rowspan="2">Nama</th>
+            <th colspan="2">Informasi</th>
+        </tr>
+        <tr>
+            <th>Usia</th>
+            <th>Kota</th>
+        </tr>
+        <tr>
+            <td class="warna-merah">Ani</td>
+            <td>20</td>
+            <td class="warna-hijau">Jakarta</td>
+        </tr>
+        <tr>
+            <td class="warna-merah">Budi</td>
+            <td>25</td>
+            <td class="warna-hijau">Bandung</td>
+        </tr>
+    </table>
+
+    <h3>Form</h3>
+    <form action="proses.php" method="post">
+        <label class="warna-orange">Nama:</label><br>
+        <input type="text" name="nama"><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+
+    <hr>
+
+    <h2 class="warna-biru">CSS Grid & Flexbox</h2>
+
+    <h3>CSS Grid</h3>
+    <p>CSS Grid adalah metode yang digunakan untuk mengatur tata letak halaman dengan lebih fleksibel.</p>
+
+    <div class="grid-container">
+        <div class="grid-item warna-merah">1</div>
+        <div class="grid-item warna-hijau">2</div>
+        <div class="grid-item warna-orange">3</div>
+    </div>
+
+    <h3>CSS Flexbox</h3>
+    <p>Flexbox berguna untuk mengatur elemen dalam satu baris atau kolom.</p>
+
+    <div class="flex-container">
+        <div class="flex-item warna-biru">A</div>
+        <div class="flex-item warna-ungu">B</div>
+    </div>
+
+    <hr>
+    <p class="warna-orange">Halaman ini dibuat sebagai latihan dasar HTML oleh Agam Yogi.</p>
+</body>
+</html>
